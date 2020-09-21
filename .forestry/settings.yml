@@ -5,11 +5,6 @@ admin_path: ''
 webhook_url: 
 sections:
 - type: directory
-  path: content/portfolio
-  label: Portfolio
-  create: none
-  match: "*"
-- type: directory
   path: content/blog
   label: Post
   create: documents
@@ -17,8 +12,8 @@ sections:
   templates:
   - post
 - type: directory
-  path: content/about
-  label: About
+  path: content/portfolio
+  label: Portfolio
   create: none
   match: "*"
 - type: directory
@@ -35,6 +30,11 @@ sections:
 - type: document
   path: config.toml
   label: Configuration
+- type: directory
+  path: content/about
+  label: About
+  create: none
+  match: "*"
 upload_dir: static/images
 public_path: "/images"
 front_matter_path: ''
