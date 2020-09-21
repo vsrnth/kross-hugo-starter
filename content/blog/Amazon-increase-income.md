@@ -10,6 +10,8 @@ Sidekiq Tid
 
 Advanced sidekiq API's
 
+    .ruby 
+    
     queue = Sidekiq::Queue.new("sidekiq_queue")
     
     // if all jobs in the queue need to be handled
